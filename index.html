@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vue Data & Methods</title>
+</head>
+<link rel = "stylesheet" href = "styles.css"/>
+<body>
+    <div id = "myApps">
+        <h1> {{greet()}} </h1>
+       Hello I am <input v-model= "message">, this is my first time in Vue.
+    </br>
+    </br>
+       Types of fruits:
+       <ul>
+            <li v-for="fruit in food_item"> {{fruit}} </li>
+        </ul>
+
+        <button v-on:click = "buttonClick"> Click Me! </button>
+    </div>
+   
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="vue.js"></script>
+
+</body>
+
+
+</html>
